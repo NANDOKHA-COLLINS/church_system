@@ -1,0 +1,10 @@
+o create a table with a foreign key:
+CREATE TABLE animal (
+id SERIAL PRIMARY KEY,
+name VARCHAR(64),
+species VARCHAR(64),
+age INT,
+habitat_id INT,
+FOREIGN KEY (habitat_id)
+REFERENCES habitat(id)
+);
